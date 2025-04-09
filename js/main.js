@@ -49,3 +49,43 @@ if (dropdownToggle && dropdownMenu) {
 }
 
 
+
+// ===========================
+// Mobile Navigation Handling
+// ===========================
+
+// Select the mobile menu button and the navigation links container
+const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+// Ensure the elements exist before adding event listeners
+if (mobileMenuToggle && navLinks) {
+  
+  /**
+   * Toggles the navigation menu when the mobile menu button is clicked.
+   * Updates ARIA-expanded attribute for accessibility.
+   */
+  mobileMenuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open"); // Toggle 'open' class to show/hide menu
+
+    // Update ARIA-expanded attribute to reflect menu state for screen readers
+    mobileMenuToggle.setAttribute(
+      "aria-expanded",
+      navLinks.classList.contains("open")
+    );
+  });
+
+  /**
+   * Closes the menu if the user clicks outside the navigation area.
+   * Ensures unintended clicks don't leave the menu open.
+   */
+  document.addEventListener("click", function (event) {
+    if (
+      !navLinks.contains(event.target) && // Click is NOT inside nav links
+      !mobileMenuToggle.contains(event.target) // Click is NOT on the toggle button
+    ) {
+      navLinks.classList.remove("open"); // Hide the menu
+      mobileMenuToggle.setAttribute("aria-expanded", "false"); // Update ARIA-expanded state
+    }
+  });
+}
