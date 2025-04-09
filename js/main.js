@@ -116,3 +116,67 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 document.querySelectorAll(".dropdown-menu").forEach((menu) =>
   menu.classList.remove("show")
 );
+
+// ========================
+// Project Portfolio Cards
+// ========================
+
+/**
+ * An array containing project data for dynamic rendering.
+ * Each project has a title, description, and link.
+ */
+const projects = [
+  {
+    title: "Basic Webpage",
+    description:
+      "A responsive webpage demonstrating semantic HTML and CSS techniques.",
+    link: "projects/feature-page.html",
+  },
+  {
+    title: "Rock Paper Scissors",
+    description: "Interactive game implementing core JavaScript logic.",
+    link: "projects/rps-game.html",
+  },
+  {
+    title: "Flatland Business Advisor",
+    description:
+      "DOM manipulation and interaction-based business advisory simulation.",
+    link: "projects/flatland-page.html",
+  },
+  {
+    title: "RSS Reader",
+    description:
+      "Fetch API used to display dynamic content from live RSS feeds.",
+    link: "projects/rss-reader.html",
+  },
+];
+
+/**
+ * Selects the container where project cards will be dynamically added.
+ */
+const projectsContainer = document.getElementById("projects-container");
+
+// Ensures the container exists before attempting to add content
+if (projectsContainer) {
+  /**
+   * Iterates through the projects array and creates an HTML structure for each project.
+   * Only adds valid projects with title, description, and link properties.
+   */
+  projects.forEach((project) => {
+    if (project.title && project.description && project.link) {
+      // Create a new div element representing a project card
+      const card = document.createElement("div");
+      card.className = "project-card";
+
+      // Define inner HTML structure using template literals for readability
+      card.innerHTML = `
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <a href="${project.link}" class="project-link">View Project</a>
+      `;
+
+      // Append the newly created card to the projects container
+      projectsContainer.appendChild(card);
+    }
+  });
+}
