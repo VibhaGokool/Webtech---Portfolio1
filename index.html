@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Fusion | Human-AI Collaborative Development</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" aria-label="Toggle dark/light theme" role="switch" aria-checked="false">
+    🌞 / 🌜
+  </button>
+
+  <!-- Header -->
+  <header class="main-header" role="banner">
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html" class="home-icon" aria-label="Return to homepage">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+          <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" fill="currentColor"/>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="dropdown" aria-haspopup="true">
+          <a href="#projects" class="nav-link dropdown-toggle" id="projects-menu" aria-expanded="false">Projects ▼</a>
+          <ul class="dropdown-menu" aria-labelledby="projects-menu" role="menu">
+            <li role="menuitem"><a href="projects/landing-page.html">Landing Page</a></li>
+            <li role="menuitem"><a href="projects/rps-game.html">RPS Game</a></li>
+            <li role="menuitem"><a href="projects/feature-page.html">Flatland </a></li>
+            <li role="menuitem"><a href="projects/rss-reader.html">RSS Reader</a></li>
+          </ul>
+        </li>
+        <li><a href="#profile" class="nav-link">Profile</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero" role="region" aria-labelledby="hero-heading">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 id="hero-heading">Bridging <span class="highlight">Human Creativity</span> with <span class="highlight">AI Precision</span></h1>
+        <p class="hero-subtitle">Building intelligent web solutions through collaborative workflows</p>
+        <div class="hero-cta">
+          <a href="#projects" class="cta-button">View Projects</a>
+          <a href="#profile" class="cta-button secondary">My Profile</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="collaboration-graphic" aria-hidden="true">
+          <div class="human-element"></div>
+          <div class="ai-element"></div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Floating Quote -->
+    <aside class="ai-quote-box" role="note" aria-label="AI Insight">
+      🤖 "Every line of code is a conversation between you and the machine."
+    </aside>
+  </section>
+
+  <!-- Profile Section -->
+  <section class="profile-section" id="profile" role="region" aria-labelledby="profile-heading">
+    <div class="profile-container">
+      <div class="profile-card">
+        <div class="profile-image">
+          <img src="images/profile.jpg" alt="Professional profile photo of Vibha Varma Gokool" loading="lazy">
+          <div class="status-badge">Student</div>
+        </div>
+        <div class="profile-info">
+          <h2 id="profile-heading">Vibha Varma Gokool</h2>
+          <p class="profile-title">Final-Year BIS Student, Curtin University</p>  
+          <div class="profile-metrics">
+            <div class="metric"><span class="metric-label">Age: </span><span class="metric-value">23</span></div>
+            <div class="metric"><span class="metric-label">Location: </span><span class="metric-value">Mauritius</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-bio">
+        <h3>About Me</h3>
+        <p>   </p>
+
+    
+        <h4>Skills</h4>
+        <ul class="skill-list" role="list">
+          <li class="skill" role="listitem"></li>
+          <li class="skill" role="listitem"></li>
+          <li class="skill" role="listitem"></li>
+          <li class="skill" role="listitem"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Showcase -->
+  <section class="projects-section" id="projects" role="region" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Project Portfolio</h2>
+    <p class="projects-intro">Explore my AI-assisted web development projects with a focus on interactivity, accessibility, and innovation.</p>
+    <div class="projects-grid" id="projects-container">
+      <!-- JS will populate cards -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Get in Touch</h2>
+    <form class="contact-form" aria-label="Contact form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required aria-required="true">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required aria-required="true">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer" role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; 2025 Portfolio Fusion. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="accessibility.html">Accessibility Statement</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
