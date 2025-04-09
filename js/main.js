@@ -180,3 +180,17 @@ if (projectsContainer) {
     }
   });
 }
+
+
+// ========================
+// Active Link Detection
+// ========================
+document.querySelectorAll(".nav-link").forEach(link => {
+  const currentPage = window.location.pathname.split("/").pop(); // e.g., 'feature-page.html'
+
+  if (link.getAttribute("href")?.includes(currentPage)) {
+    link.classList.add("active");
+    link.setAttribute("aria-current", "page");
+    link.addEventListener("click", e => e.preventDefault()); // Prevent reload
+  }
+});
