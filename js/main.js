@@ -89,3 +89,30 @@ if (mobileMenuToggle && navLinks) {
     }
   });
 }
+
+
+
+// ========================
+// Accessibility Enhancers
+// ========================
+
+/**
+ * Enables keyboard navigation for links.
+ * Allows users to activate links using the "Enter" key.
+ * This improves accessibility, ensuring users who navigate with keyboards can interact with navigation links.
+ */
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      link.click(); // Simulates a click event when Enter is pressed
+    }
+  });
+});
+
+/**
+ * Ensures dropdown menus are closed on initial page load.
+ * Prevents any dropdown from being unintentionally visible when the page first renders.
+ */
+document.querySelectorAll(".dropdown-menu").forEach((menu) =>
+  menu.classList.remove("show")
+);
