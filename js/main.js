@@ -145,7 +145,7 @@ const projects = [
     title: "Flatland Business Advisor",
     description:
       "DOM manipulation and interaction-based business advisory simulation.",
-    link: "projects/flatland-page.html",
+    link: "projects/flatland/flatland_0.html",
   },
   {
     title: "RSS Reader",
@@ -214,3 +214,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const square = document.getElementById("square");
+  const words = document.getElementById("words");
+
+  if (words) {
+    words.textContent = "Welcome to Flatland!";
+  }
+
+  if (square) {
+    square.addEventListener("click", () => {
+      square.style.backgroundColor = "red";
+    });
+
+    square.addEventListener("mouseover", () => {
+      square.style.backgroundColor = "green";
+    });
+
+    square.addEventListener("mouseout", () => {
+      square.style.backgroundColor = "gray";
+    });
+  }
+});
+
+
+
+mobileMenuToggle.addEventListener("click", () => {
+  console.log("Toggle button clicked");
+  navLinks.classList.toggle("open");
+  mobileMenuToggle.setAttribute(
+    "aria-expanded",
+    navLinks.classList.contains("open")
+  );
+});
+
+
