@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flatland 3</title>
+  <link rel="stylesheet" href="../css/flatland.css" />
+</head>
+<body>
+  <main>
+    <h1>Flatland Step 3: Multiple Events</h1>
+    
+<div id="square"
+     onclick="makeRed()"
+     onmouseover="makeGreen()"
+     onmouseout="makeGray()"
+     style="width:100px;height:100px;background:gray;"></div>
+
+<script>
+function makeRed() {{ document.getElementById('square').style.background = 'red'; }}
+function makeGreen() {{ document.getElementById('square').style.background = 'green'; }}
+function makeGray() {{ document.getElementById('square').style.background = 'gray'; }}
+</script>
+
+  </main>
+  
+</body>
+</html>

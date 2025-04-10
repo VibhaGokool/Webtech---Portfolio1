@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flatland Activity Navigator</title>
+
+
+  <link rel="stylesheet" href="../../../css/style.css">
+  
+  <link rel="stylesheet" href="css/flatland.css" />
+
+
+</head>
+<body>
+
+
+  <header class="main-header" role="banner">
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html" class="home-icon" aria-label="Return to homepage">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+          <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" fill="currentColor"/>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../../index.html" class="nav-link">Home</a></li>
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="#projects" class="nav-link dropdown-toggle" id="projects-menu">Projects ▼</a>
+          <ul class="dropdown-menu" aria-labelledby="projects-menu" role="menu">
+            <li role="menuitem"><a href="../feature-page.html">Feature Page</a></li>
+            <li role="menuitem"><a href="../rps-game.html">RPS Game</a></li>
+            <li role="menuitem"><a href="flatland_0.html">Flatland</a></li>
+            <li role="menuitem"><a href="../rss-reader.html">RSS Reader</a></li>
+          </ul>
+        </li>
+        <li><a href="../../index.html#profile" class="nav-link">Profile</a></li>
+        <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+  
+  <main class="flatland-main">
+    <h1>🧠 Flatland Interactivity Explorer</h1>
+    <p>Select a step below to view the progressive enhancements:</p>
+
+    <div class="flatland-grid">
+      <a href="flatland_1.html" class="flatland-button">Step 1: DOM Structure</a>
+      <a href="flatland_2.html" class="flatland-button">Step 2: Click Interaction</a>
+      <a href="flatland_3.html" class="flatland-button">Step 3: Multiple Events</a>
+      <a href="flatland_4.html" class="flatland-button">Step 4: Param Functions</a>
+      <a href="flatland_5.html" class="flatland-button">Step 5: JS Event Listeners</a>
+      <a href="flatland_6.html" class="flatland-button">Step 6: DOM Onload</a>
+      <a href="flatland_7.html" class="flatland-button">Step 7: External Event Binding</a>
+      <a href="flatland_8.html" class="flatland-button">Step 8: Final Integration</a>
+    </div>
+  </main>
+
+  <script src="../js/flatland.js"></script>
+  <script src="../../../js/main.js"></script>
+</body>
+</html>

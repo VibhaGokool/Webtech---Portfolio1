@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flatland 6</title>
+  <link rel="stylesheet" href="../css/flatland.css" />
+</head>
+<body>
+  <main>
+    <h1>Flatland Step 6: DOM Onload Manipulation</h1>
+    
+<div id="words"></div>
+<div id="square" style="width:100px;height:100px;background:gray;"></div>
+<script>
+window.onload = function() {
+    document.getElementById('words').textContent = 'Welcome to Flatland!';
+};
+</script>
+
+  </main>
+  
+</body>
+</html>

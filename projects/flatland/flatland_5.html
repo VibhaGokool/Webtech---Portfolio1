@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flatland 5</title>
+  <link rel="stylesheet" href="../css/flatland.css" />
+</head>
+<body>
+  <main>
+    <h1>Flatland Step 5: JavaScript Event Listeners</h1>
+    
+<div id="square" style="width:100px;height:100px;background:gray;"></div>
+<script>
+const square = document.getElementById('square');
+square.addEventListener('click', () => square.style.background = 'red');
+square.addEventListener('mouseover', () => square.style.background = 'green');
+square.addEventListener('mouseout', () => square.style.background = 'gray');
+</script>
+
+  </main>
+  
+</body>
+</html>
