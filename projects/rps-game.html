@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D RPS </title>
+  <link rel="stylesheet" href="../css/rps-game.css" />
+</head>
+<body>
+  <div class="game-container">
+    <header class="header">
+      <h1>🎮 3D Rock-Paper-Scissors Ultimate</h1>
+      <p>First to 5 wins!</p>
+    </header>
+
+    <div class="scoreboard">
+      <div class="score-item" id="player-score">
+        <h2>Player</h2>
+        <span class="score">0</span>
+      </div>
+      <div class="score-item">
+        <h2>Rounds</h2>
+        <span id="round-count">0</span>
+      </div>
+      <div class="score-item" id="ai-score">
+        <h2>Computer</h2>
+        <span class="score">0</span>
+      </div>
+    </div>
+
+    <div class="choices-grid">
+      <div class="choice-card" data-choice="rock">
+        <div class="choice-emoji">🪨</div>
+        <h3>Rock</h3>
+      </div>
+      <div class="choice-card" data-choice="paper">
+        <div class="choice-emoji">📄</div>
+        <h3>Paper</h3>
+      </div>
+      <div class="choice-card" data-choice="scissors">
+        <div class="choice-emoji">✂️</div>
+        <h3>Scissors</h3>
+      </div>
+    </div>
+
+    <div class="battle-arena">
+      <div id="player-choice"></div>
+      <div class="vs-text">VS</div>
+      <div id="ai-choice"></div>
+    </div>
+
+    <div class="result-container">
+      <p id="result-text">Choose your weapon!</p>
+    </div>
+
+    <div class="controls">
+      <button id="reset-btn">🔄 Reset Game</button>
+      <button id="mode-btn">💡 Easy Mode</button>
+    </div>
+  </div>
+
+  <script src="../js/rps.game.js"></script>
+</body>
+</html>
