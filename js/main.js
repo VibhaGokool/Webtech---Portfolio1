@@ -92,6 +92,10 @@ if (mobileMenuToggle && navLinks) {
 
 
 
+
+
+
+
 // ========================
 // Accessibility Enhancers
 // ========================
@@ -192,5 +196,21 @@ document.querySelectorAll(".nav-link").forEach(link => {
     link.classList.add("active");
     link.setAttribute("aria-current", "page");
     link.addEventListener("click", e => e.preventDefault()); // Prevent reload
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.querySelector(".mobile-menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (toggleBtn && navLinks) {
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      toggleBtn.setAttribute(
+        "aria-expanded",
+        navLinks.classList.contains("open")
+      );
+    });
   }
 });
