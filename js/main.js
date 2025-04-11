@@ -55,25 +55,12 @@ if (dropdownToggle && dropdownMenu) {
 // ===========================
 
 // Select the mobile menu button and the navigation links container
-const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 
-// Ensure the elements exist before adding event listeners
-if (mobileMenuToggle && navLinks) {
-  
-  /**
-   * Toggles the navigation menu when the mobile menu button is clicked.
-   * Updates ARIA-expanded attribute for accessibility.
-   */
-  mobileMenuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("open"); // Toggle 'open' class to show/hide menu
-
-    // Update ARIA-expanded attribute to reflect menu state for screen readers
-    mobileMenuToggle.setAttribute(
-      "aria-expanded",
-      navLinks.classList.contains("open")
-    );
-  });
+mobileMenuToggle.addEventListener('click', () => {
+  const mainNav = document.querySelector('.main-nav');
+  mainNav.classList.toggle('active');
+});
 
   /**
    * Closes the menu if the user clicks outside the navigation area.
@@ -88,7 +75,6 @@ if (mobileMenuToggle && navLinks) {
       mobileMenuToggle.setAttribute("aria-expanded", "false"); // Update ARIA-expanded state
     }
   });
-}
 
 
 
@@ -151,7 +137,7 @@ const projects = [
     title: "RSS Reader",
     description:
       "Fetch API used to display dynamic content from live RSS feeds.",
-    link: "projects/rss-reader.html",
+    link: "projects/rss-reader-html",
   },
 ];
 
@@ -251,5 +237,3 @@ mobileMenuToggle.addEventListener("click", () => {
     navLinks.classList.contains("open")
   );
 });
-
-
