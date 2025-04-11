@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RSS Reader | Multi-Feed AI Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/rss-reader.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Consistent Header -->
+  <header class="main-header" role="banner">
+    <nav class="main-nav" aria-label="Primary navigation">
+        <a href="../index.html" class="home-icon" aria-label="Return to homepage">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+            <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" fill="currentColor" />
+          </svg> 
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#projects" class="nav-link dropdown-toggle" id="projects-menu">Projects ▼</a>
+            <ul class="dropdown-menu" aria-labelledby="projects-menu" role="menu">
+              <li role="menuitem"><a href="feature-page.html">Feature Page</a></li>
+              <li role="menuitem"><a href="rps-game.html">RPS Game</a></li>
+              <li role="menuitem"><a href="flatland/flatland_0.html">Flatland</a></li>
+              <li role="menuitem"><a href="rss-reader.html">RSS Reader</a></li>
+            </ul>
+          </li>
+        </li>
+        <li><a href="../index.html#profile" class="nav-link">Profile</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1><i class="fas fa-rss"></i> AI-Powered RSS Reader</h1>
+      <p>Stay up-to-date with real-time articles from multiple curated sources.</p>
+    </div>
+  </section>
+
+  <!-- Controls -->
+  <section class="rss-controls">
+    <div class="feed-selector">
+      <label for="feed-selector">Select Feed:</label>
+      <select id="feed-selector" aria-label="RSS Feed Selection">
+        <option value="https://hacks.mozilla.org/rss">Mozilla Hacks</option>
+        <option value="http://feeds.bbci.co.uk/news/world/rss.xml">BBC World News</option>
+        <option value="https://techcrunch.com/feed">TechCrunch</option>
+      </select>
+    </div>
+    <button id="refresh-btn" aria-label="Refresh Feed">
+      <i class="fas fa-sync-alt"></i> Refresh
+    </button>
+  </section>
+
+  <!-- Feed Section -->
+  <main class="rss-main">
+    <div class="loading-overlay" aria-live="polite">
+      <div class="loader"></div>
+      <p>Fetching articles...</p>
+    </div>
+
+    <div class="error-message" aria-live="assertive"></div>
+    <div class="article-grid" id="content"></div>
+
+    <aside class="preview-pane" aria-label="Article Preview">
+      <div class="preview-content"></div>
+      <button class="close-preview" aria-label="Close Preview">
+        <i class="fas fa-times"></i>
+      </button>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 Portfolio Fusion | RSS Reader by Vibha Varma Gokool</p>
+  </footer>
+
+  <script src="../js/rss-reader.js"></script>
+  <script src="../js/main.js"></script> 
+</body>
+</html>
