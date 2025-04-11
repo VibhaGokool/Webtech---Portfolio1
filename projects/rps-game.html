@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>3D RPS </title>
   <link rel="stylesheet" href="../css/rps-game.css" />
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+  <header class="main-header" role="banner">
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="../index.html" class="home-icon" aria-label="Return to homepage">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+          <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" fill="currentColor" />
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="#projects" class="nav-link dropdown-toggle" id="projects-menu">Projects ▼</a>
+          <ul class="dropdown-menu" aria-labelledby="projects-menu" role="menu">
+            <li role="menuitem"><a href="feature-page.html">Feature Page</a></li>
+            <li role="menuitem"><a href="rps-game.html">RPS Game</a></li>
+            <li role="menuitem"><a href="flatland/flatland_0.html">Flatland</a></li>
+            <li role="menuitem"><a href="projects/rss-reader.html">RSS Reader</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#profile" class="nav-link">Profile</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+  
+
   <div class="game-container">
     <header class="header">
       <h1>🎮 3D Rock-Paper-Scissors Ultimate</h1>
@@ -60,5 +93,7 @@
   </div>
 
   <script src="../js/rps.game.js"></script>
+  <script src="../js/main.js"></script> 
+
 </body>
 </html>
