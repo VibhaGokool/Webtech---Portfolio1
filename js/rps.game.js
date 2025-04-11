@@ -1,3 +1,4 @@
+
 const choices = document.querySelectorAll('.choice-card');
 const resultText = document.getElementById('result-text');
 const playerScoreEl = document.getElementById('player-score').querySelector('.score');
