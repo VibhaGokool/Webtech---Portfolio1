@@ -1,0 +1,68 @@
+.rss-dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .rss-controls {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .rss-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .rss-grid article {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+  }
+  
+  .rss-grid article:hover {
+    transform: translateY(-5px);
+  }
+  
+  .rss-grid h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rss-grid p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .rss-error {
+    color: #c00;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .rss-dashboard {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .rss-dashboard {
+      padding: 2rem 4rem;
+    }
+  }
+  
