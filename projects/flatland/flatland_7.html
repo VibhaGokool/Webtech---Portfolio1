@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Flatland 7</title>
-  <link rel="stylesheet" href="../css/flatland.css" />
+  <link rel="stylesheet" href="../../css/flatland.css" />
 </head>
 <body>
   <main>
@@ -13,5 +13,29 @@
 <div id="square" style="width:100px;height:100px;background:gray;"></div>
   </main>
   <script src="../js/flatland.js"></script>
+</body>
+</html>
+
+
+
+
+
+<script>
+const square = document.getElementById('square');
+square.addEventListener('click', () => square.style.background = 'red');
+square.addEventListener('mouseover', () => square.style.background = 'green');
+square.addEventListener('mouseout', () => square.style.background = 'gray');
+</script>
+
+<script>
+window.onload = function() {
+  document.getElementById('words').textContent = 'Welcome to Flatland!';
+};
+
+
+</script>
+
+  </main>
+  
 </body>
 </html>
