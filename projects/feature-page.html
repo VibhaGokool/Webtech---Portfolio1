@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feature Page | Responsive Layout with Flexbox & Grid</title>
+  <link rel="stylesheet" href="../css/feature-page.css">
+
+  <link rel="stylesheet" href="../css/style.css" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="main-header" role="banner">
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="../index.html" class="home-icon" aria-label="Return to homepage">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+          <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" fill="currentColor" />
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="#projects" class="nav-link dropdown-toggle" id="projects-menu">Projects ▼</a>
+          <ul class="dropdown-menu" aria-labelledby="projects-menu" role="menu">
+            <li role="menuitem"><a href="feature-page.html">Feature Page</a></li>
+            <li role="menuitem"><a href="rps-game.html">RPS Game</a></li>
+            <li role="menuitem"><a href="flatland/flatland_0.html">Flatland</a></li>
+            <li role="menuitem"><a href="rss-reader.html">RSS Reader</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#profile" class="nav-link">Profile</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Responsive Feature Page</h1>
+      <p>Showcasing Flexbox, CSS Grid, and responsive design principles in action.</p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <h2 class="section-heading">AI-Powered Tools</h2>
+    <div class="grid-container">
+      <div class="feature-card">
+        <h3>ChatGPT</h3>
+        <p>A conversational AI model that helps generate code, ideas, and troubleshoot logic.</p>
+        <a href="https://chat.openai.com" target="_blank" class="button-link">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <h3>GitHub Copilot</h3>
+        <p>AI code completion tool integrated into your IDE to speed up development.</p>
+        <a href="https://github.com/features/copilot" target="_blank" class="button-link">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <h3>Figma AI</h3>
+        <p>Leverage AI-assisted layouts, design suggestions, and wireframes in real-time.</p>
+        <a href="https://www.figma.com" target="_blank" class="button-link">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 Portfolio Fusion | Designed by Vibha Varma Gokool</p>
+  </footer>
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
