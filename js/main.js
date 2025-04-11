@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "RSS Reader",
       description: "Fetch API used to display dynamic content from live RSS feeds.",
-      link: "projects/rss-reader.html", // ✅ No trailing slash
+      link: "projects/rss-reader.html", 
     },
   ];
 
