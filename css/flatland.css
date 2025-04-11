@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  main {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  #square {
+    width: 3000px;
+    height: 120px;
+    margin: 2rem auto;
+    background-color: gray;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  #square:hover {
+    transform: scale(1.05);
+  }
+  
+  .flatland-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .flatland-button {
+    display: inline-block;
+    padding: 1rem;
+    background: linear-gradient(135deg, #00c2cb, #009aa2);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .flatland-button:hover {
+    background: linear-gradient(135deg, #009aa2, #00c2cb);
+    transform: translateY(-4px);
+  }
+  
+  @media (max-width: 480px) {
+    main {
+      padding: 1.5rem;
+    }
+  
+    #square {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .flatland-button {
+      padding: 0.75rem;
+      font-size: 0.95rem;
+    }
+  }
+  
+
+  .flatland-main {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .flatland-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  
+  .flatland-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: left;
+    text-decoration: none;
+    color: #2c3e50;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid #00c2cb;
+  }
+  
+  .flatland-card h3 {
+    margin-bottom: 0.5rem;
+    color: #00c2cb;
+  }
+  
+  .flatland-card:hover {
+    transform: translateX(-4px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    background: #f9f9f9;
+  }
+  .bounce {
+    animation: bounce 0.3s ease;
+  }
+  
+  @keyframes bounce {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  
