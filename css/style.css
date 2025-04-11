@@ -33,7 +33,7 @@
   
   /* Theme Toggle */
   .theme-toggle {
-    position:fixed ;
+    position: nothing;
     top: 10rem;
     left: 1rem;
     background: var(--secondary-color);
@@ -311,7 +311,7 @@
   }
   
   .status-badge {
-    position:fixed ;
+    position:nothing;
     bottom: 10px;
     background: var(--accent-color);
     padding: 0.5rem 1rem;
@@ -366,7 +366,27 @@
     padding: 4rem 2rem;
     text-align: center;
   }
+  .view-projects-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.view-projects-button:hover {
+  background-color: #0056b3;
+}
   
+
+
+
+
+
+
+
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -544,75 +564,3 @@
 }
 
 
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.col-md-4 {
-  width: 33.33%;
-}
-
-.col-sm-6 {
-  width: 50%;
-}
-
-.col-xs-12 {
-  width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-  .main-nav {
-    display: none;
-  }
-  .mobile-menu-toggle {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .main-content {
-    width: 100%;
-  }
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-@media only screen and (max-width: 768px) {
-  img {
-    width: 50%;
-  }
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: #fff;
-}
-
-.btn:hover {
-  background-color: #3e8e41;
-}
-
-@media only screen and (max-width: 480px) {
-  .btn {
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-}
