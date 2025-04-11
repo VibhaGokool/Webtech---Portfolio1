@@ -4,14 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Flatland 8</title>
-  <link rel="stylesheet" href="../css/flatland.css" />
+  <link rel="stylesheet" href="../../css/flatland.css" />
 </head>
 <body>
   <main>
     <h1>Flatland Step 8: Final Integration with External JS</h1>
     <div id="words"></div>
-<div id="square" style="width:100px;height:100px;background:gray;"></div>
+<div id="square"
+     onclick="makeRed()"
+     onmouseover="makeGreen()"
+     onmouseout="makeGray()"
+     style="width:100px;height:100px;background:gray;"></div>
   </main>
-  <script src="../js/flatland.js"></script>
+  <script src="../../js/flatland.js"></script>
+  
 </body>
 </html>
+
