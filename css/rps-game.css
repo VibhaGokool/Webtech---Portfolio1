@@ -1,11 +1,11 @@
 :root {
     --primary: #2a2f3d;
-    --secondary: #00c2cb;
+    --secondary: #37acb2;
     --accent: #ff4757;
     --win: #2ed573;
     --lose: #ff6b81;
     --draw: #ffa502;
-    --text: #f1f2f6;
+    --text: #9f0b7f;
   }
   
   * {
@@ -26,9 +26,10 @@
   }
   
   .game-container {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     text-align: center;
+    background-color: #f7e5e5;
   }
   
   .header {
@@ -40,7 +41,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(43, 33, 33, 0.1);
     padding: 1.5rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -57,10 +58,11 @@
     gap: 1.5rem;
     margin: 2rem 0;
     perspective: 1000px;
+   
   }
   
   .choice-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(217, 23, 130, 0.1);
     border-radius: 15px;
     padding: 1.5rem;
     cursor: pointer;
@@ -72,7 +74,7 @@
   
   .choice-card:hover {
     transform: rotateY(15deg) scale(1.05);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(30, 17, 17, 0.15);
   }
   
   .choice-card:active {
@@ -146,4 +148,5 @@
   .winner {
     animation: pulse 1s ease infinite;
   }
+  
   
